@@ -1,9 +1,5 @@
 from requests import get
 
-
-
-
-
 #Change URL
 websites =(
     "https://google.com",
@@ -23,6 +19,6 @@ for website in websites:
     if reponse.status_code == 200:
         results[website] = "OK"
     else :
-        result[website] = "FAILED"
+        results[website] = "FAILED"
     # print(reponse.status_code)
 print(results)
