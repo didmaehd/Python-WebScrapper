@@ -21,7 +21,6 @@ else :
         for post in job_post:
             # print (post)
             # print(".......................................................")
-            title = post.find_all(class_="title")
+            title = post.find(class_="title")
             company = post.find(class_="company")
-            print (company,"////", title)
-            print(".......................................................")
+            print ("Company name :", company.text, "/","Job Title :",title.text)
